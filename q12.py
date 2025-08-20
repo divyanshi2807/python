@@ -1,10 +1,10 @@
+A = int(input("Enter base A: "))
+B = int(input("Enter exponent B: "))
+result = 1
+i = 0
 
-A = int(input("Enter angle A: "))
-B = int(input("Enter angle B: "))
-C = int(input("Enter angle C: "))
+while i < B:
+    result = result * A
+    i += 1
 
-if A > 0 and B > 0 and C > 0 and (A + B + C == 180):
-    print("The triangle is VALID.")
-else:
-    print("The triangle is NOT VALID.")
-
+print("Result:", result)

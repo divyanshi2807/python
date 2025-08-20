@@ -1,5 +1,6 @@
-num=int(input("enter a num"))
-if num%7==0 and num%10 ==5:
-    print("num is divisible by 7 and last digit is 5")
-else:
-    print("NO")
+N = int(input("Enter a positive integer N: "))
+i = 1
+while i <= N:
+    if i % 2 != 0:
+        print(i, end=' ')
+    i += 1

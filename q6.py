@@ -1,12 +1,8 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
-
-if a >= b and a >= c:
-    maximum = a
-elif b >= a and b >= c:
-    maximum = b
-else:
-    maximum = c
-
-print("Maximum is:", maximum)
+A = int(input("Enter a positive integer A: "))
+i = 1
+even_sum = 0
+while i <= A:
+    if i % 2 == 0:
+        even_sum += i
+    i += 1
+print("Sum of even numbers:", even_sum)

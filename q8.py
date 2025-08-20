@@ -1,5 +1,14 @@
-age = int(input("Enter age: "))
-if age >= 18:
-    print("Eligible to vote")
+N = int(input("Enter an integer N: "))
+count = 0
+
+if N == 0:
+    count = 1
 else:
-    print("Not eligible to vote")
+    if N < 0:
+        N = -N
+
+    while N > 0:
+        N = N // 10
+        count += 1
+
+print("Number of digits:", count)

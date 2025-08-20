@@ -1,3 +1,16 @@
-day_num = int(input("Enter a number (1-7): "))
-days = {1: "Sunday", 2: "Monday", 3: "Tuesday", 4: "Wednesday", 5: "Thursday", 6: "Friday", 7: "Saturday"}
-print(days.get(day_num, "Invalid input"))
+A = int(input("Enter an integer A: "))
+original = A
+
+if A < 0:
+    print("No")
+else:
+    reverse = 0
+    while A > 0:
+        digit = A % 10
+        reverse = reverse * 10 + digit
+        A = A // 10
+
+    if original == reverse:
+        print("Yes")
+    else:
+        print("No")
