@@ -5,3 +5,4 @@ D=int(input("enter forth num"))
 E=int(input("enter fifth num"))
 average=(A+B+C+D+E)/5
 print("average OF THESE NUMBERS:" , average)
+
